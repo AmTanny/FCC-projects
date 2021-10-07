@@ -78,12 +78,12 @@ a:visited {
     color: darkgreen;
 }
 
-.fab-fcc i {
+#h-1 i {
     transform: scale(1);
     transition: 0.5s all;
 }
 
-.fab-fcc i:hover {
+#h-1 i:hover {
     transform: scale(1.2);
 }
 
