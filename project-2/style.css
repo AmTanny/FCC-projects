@@ -98,6 +98,7 @@ button:hover {
     transform: scale(1.05);
 }
 
+/* Media Queries */
 @media (max-device-width: 768px) { 
     h1 {
         font-size: 1.6rem;
