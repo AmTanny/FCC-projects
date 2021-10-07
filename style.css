@@ -7,10 +7,163 @@
 }
 
 body {
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='1' y2='0' gradientTransform='rotate(140,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%230FF'/%3E%3Cstop offset='1' stop-color='%23CF6'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(275,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23F00'/%3E%3Cstop offset='1' stop-color='%23FC0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23FFF' fill-opacity='0' stroke-miterlimit='10'%3E%3Cg stroke='url(%23a)' stroke-width='10.889999999999999'%3E%3Cpath transform='translate(-35 8) rotate(5 1409 581) scale(1.02)' d='M1409 581 1450.35 511 1490 581z'/%3E%3Ccircle stroke-width='3.63' transform='translate(-20 20) rotate(6 800 450) scale(1.01)' cx='500' cy='100' r='40'/%3E%3Cpath transform='translate(18 -60) rotate(60 401 736) scale(1.01)' d='M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z'/%3E%3C/g%3E%3Cg stroke='url(%23b)' stroke-width='3.3'%3E%3Cpath transform='translate(120 -8) rotate(2 150 345) scale(0.98)' d='M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z'/%3E%3Crect stroke-width='7.26' transform='translate(-80 -50) rotate(72 1089 759)' x='1039' y='709' width='100' height='100'/%3E%3Cpath transform='translate(-120 40) rotate(12 1400 132)' d='M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
     font-family: 'Roboto Mono', monospace, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #2F7336;  
+    transition: 0.3s all;
+}
+
+a:hover{ 
+    text-decoration: underline;
+    color: #f00;
+}
+
+a:visited {
+    color: darkorange;
 }
 
 .container {
     max-width: 900px;
-    margin: auto;
+    margin: 250px auto;
+    padding: 0 40px;
+}
+
+#icons {
+    top: 45%;
+    left: 1rem;
+    transform: translateY(-50%);
+    position: fixed;
+}
+
+#icons > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.lia {
+    margin: 0.5rem 0.2rem;
+}
+
+.lia i {
+    background-image: linear-gradient(to right top, #a8eb12, #71f66c, #28fca8, #00ffda, #00ffff);
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: 0.5s all;
+}
+
+.lia i:hover {
+    background-image: linear-gradient(to right top, #ff0000, #ff6700, #ff9f00, #ffd000, #ffff00);    
+    transform: scale(1.2) translateX(10px) translateY(10px);
+}
+
+#heading {
+    position: relative;
+    margin: 50px auto;
+}
+
+#heading #h-1 {
+    font-size: 2rem;
+}
+
+#h-1 > a, #h-1 > a:hover, #h-1 > a:visited {
+    color: darkgreen;
+}
+
+#heading #h-2 {
+    font-size: 4rem;
+}
+
+.fcc:visited {
+    color: #2F7336 !important;
+}
+
+#heading #h-3 {
+    float: right;
+    width: 200px;
+    font-size: 2.5rem;
+}
+
+#projects {
+    margin-left: 50px;
+}
+
+#projects li {
+    font-size: 1.5rem;
+    margin: 1rem auto;
+}
+
+/* Media Queries */
+@media (max-width: 1000px) {
+    #icons {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        position: fixed;
+        text-align: center;
+    }
+
+    #icons > ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .lia {
+        margin: 0.25rem;
+    }
+    
+    .lia i:hover, .lia i:active {
+        transform: scale(1.2) translateY(10px);
+    }
+    
+}
+
+@media (max-width: 600px) {
+    #projects li {
+        font-size: 1.1rem;
+    }
+
+    .container {
+        max-width: 550px;
+        margin: 95%;
+        margin: 200px auto;
+        padding: 20px;
+    }
+
+    #heading #h-1 {
+        font-size: 1.4rem;
+    }
+    
+    #heading #h-2 {
+        font-size: 2.5rem;
+    }
+    
+    #heading #h-3 {
+        float: left;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 333px) {
+
+    .container {
+        margin: 175px auto;
+    }
+
+    #heading #h-2 {
+        font-size: 2.2rem;
+    }
+
+    #projects li {
+        font-size: 1rem;
+    }
 }
