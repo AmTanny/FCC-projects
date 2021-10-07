@@ -241,6 +241,21 @@ img {
     text-shadow: 4px 5px black;
 }
 
+.links:nth-child(2) a {
+    color: rgb(128,128,128, 0.8);
+    pointer-events: none;
+}
+
+.links:nth-child(2) h2 {
+    cursor:not-allowed;  
+}
+
+
+.links:nth-child(2):hover h2 {
+    transform: translateY(0);
+}
+
+
 .links a:hover {
     color: rgb(255, 255, 255, 0.8);
 }
