@@ -337,7 +337,6 @@ img {
 }
 
 @media (max-width: 630px) {
-
     .head {
         padding: 10px;
     }
@@ -365,6 +364,7 @@ img {
 
     .pro {
         margin: 20px 0;
+        margin-left: 2% !important;
         width: 95%;
         text-align: center;
     }
@@ -427,5 +427,11 @@ img {
     #foo h3 {
         font-size: 1.1rem;
         font-weight: lighter;
+    }
+}
+
+@media (max-width: 330px) {
+    .pro {
+        margin-left: 1% !important
     }
 }
