@@ -78,6 +78,15 @@ a:visited {
     color: darkgreen;
 }
 
+.fab-fcc {
+    transform: scale(1);
+    transition: 0.5s all;
+}
+
+.fab-fcc:hover {
+    transform: scale(1.2);
+}
+
 #heading #h-2 {
     font-size: 4rem;
 }
