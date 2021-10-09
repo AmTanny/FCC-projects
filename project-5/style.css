@@ -25,24 +25,29 @@ a {
     display: flex;
     justify-content: flex-end;
     background-color: #D7CEC7;
+    opacity: 0.9 !important;
     z-index: 1;
     position: fixed;
     width: 100%;
-    border-bottom: 1px solid black;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+    transition: opacity 0.4s ease-out;
+}
+
+.ab:hover {
+    opacity: 1 !important;
 }
 
 .ab ul {
+    font-size: 1.3rem;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     padding: 20px 0;
-    background-color: #D7CEC7;
 }
 
 .ab a {
     padding: 20px;
-    background-color: #D7CEC7;
     color: #76323F;
     letter-spacing: 0.75px;
     font-weight: bold;
@@ -337,6 +342,12 @@ img {
 }
 
 @media (max-width: 630px) {
+    .ab {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    
     .head {
         padding: 10px;
     }
