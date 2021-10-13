@@ -110,7 +110,11 @@ a {
 
 .pro:hover {
     transform: scale(1.05) translateY(10px);
-    background-color: rgba();
+    background-color: #76323f;
+}
+
+.pro:hover h3 {
+    color: #fff;
 }
 
 .pro img {
